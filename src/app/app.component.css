@@ -1,0 +1,111 @@
+header {
+  background-color: #080870;
+  height: 10vh;
+  padding-top: 4vh;
+}
+h1 {
+  text-align: center;
+  margin: 0;
+  color: cornsilk;
+}
+table, th, td {
+  font-family:sans-serif;
+  margin-left: auto; 
+  margin-right: auto;
+  text-align: center;
+  border-bottom: 1px solid black;
+  border-collapse: collapse;
+  padding-bottom: 5px;
+}
+label {
+  font-family: sans-serif;
+}
+button {
+  font-family: sans-serif;
+}
+.sort {
+  background-color: rgb(184, 173, 173);
+  color: black;
+  padding: 16px;
+  font-size: 13px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+}  
+.one {
+  width: 21%;
+  height: 40px;
+  padding-top: 32px;
+  padding-bottom: 12px;
+}
+.two {
+  width:21%;
+  box-shadow: none;
+}
+.three {
+  width:21%;
+  height: 55px;
+  position: relative;
+  top: 10px;
+}
+.four {
+  width:21%;
+  box-shadow: none;
+}
+
+div {
+  display: inline-block;
+  margin: auto;
+  height: auto;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 20px;
+  padding-right: 10px;
+  border-radius: 3px;
+  margin-right: 1%;
+  box-shadow: 0 2px 6px 0 grey;
+}
+
+select {
+  border: none;
+  margin-left: 10px;
+  border-bottom: 1px solid grey;
+}
+
+.clearButton {
+  height: 45px;
+  width: 180px;
+  background-color: #080870;
+  color: white;
+  margin-top: 25px;
+  margin-left: 43%;
+  font-size: 16px;
+}
+
+.sortOne {
+  margin-left: 70px;
+  height: 55px;
+  width: 125px;
+  background-color: #8181e2;
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 3px;
+  box-shadow: 0 2px 5px 0 #5252dc;
+}
+.sortTwo {
+  margin-left: 70px;
+  height: 55px;
+  width: 155px;
+  background-color: #8181e2;
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 3px;
+  box-shadow: 0 2px 5px 0 #5252dc;
+}
+.filter{
+  margin-top: 10px;
+  margin-left: 33px;
+}

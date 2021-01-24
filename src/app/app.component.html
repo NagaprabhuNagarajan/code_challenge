@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <title>List of Software Details</title>
+    <link rel="stylesheet" type="text/css" href="app.component.css">
+</head>
+
+
+<header>
+    <h1 style="font-family: sans-serif">List of Software Applications</h1>
+</header>
+
+<body *ngIf="table_values.length>0">
+    <table style="width:50%">
+        <tr>
+            <th>Name</th>
+            <th>Author</th>
+            <th>Version</th>
+            <th>Publishing Year</th>
+            <th>Price(in $)</th>
+        </tr>
+        <tr *ngFor="let value of table_values">
+            <td>{{value.Name}}</td>
+            <td>{{value.Author}}</td>
+            <td>{{value.Version}}</td>
+            <td>{{value.Year}}</td>
+            <td>{{value.Price}}</td>
+        </tr>
+    </table>
+
+    <br><br><br><br>
+    <div class="one">
+        <label>Select an Author</label>
+        <select [ngModel]="choosenAuthor" (ngModelChange)="sortingByAuthor($event)">
+            <option></option>
+            <option *ngFor="let name of authorNames">{{name}}</option>
+        </select>
+    </div>
+
+    <div class="two">
+        <button (click)="sortingByPrice(1)" class="sortOne">Sort By Price</button>
+    </div>
+
+    <div class="three">
+        <label>Select an Author</label>
+        <select [ngModel]="choosenAuthor" (change)="sortingByAuthor($event.target.value)">
+            <option></option>
+            <option *ngFor="let name of authorNames">{{name}}</option>
+        </select>
+        <br>
+        <label>Select a Year</label>
+        <select [ngModel]="choosenYear" (change)='sortingByYear($event.target.value)' class="filter">
+            <option></option>
+            <option *ngFor="let year of yearArray">{{year}}</option>
+        </select>
+    </div>
+
+    <div class="four">
+        <button (click)="sortingByPrice('2')" class="sortTwo">Sort By Author & Year</button>
+    </div>
+
+    <input type="submit" (click)="getTableData()" value="Clear" class= "clearButton">
+</body>
+
+</html>
